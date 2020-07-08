@@ -1,0 +1,9 @@
+.touch_button {
+  position: sticky;
+  top: 93%;
+  left: 45%;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  z-index: 50;
+}
