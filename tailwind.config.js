@@ -11,10 +11,12 @@ module.exports = {
       },
       width: {
         "45": "45%",
+        "60": "60%",
       },
       height: {
         sm: "500px",
         smm: "450px",
+        "30": "30%",
       },
       colors: {
         "nav-green": "#13631e",

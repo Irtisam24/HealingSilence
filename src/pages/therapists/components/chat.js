@@ -234,9 +234,6 @@ const TherapistChat = ({ match }) => {
                                 />
                                 <p className='name text-lg'>{thread.thread}</p>
                                 <p className='preview'>{thread.message}</p>
-                                {/* <p className='text-center text-lg mt-2'>
-                                  {thread.thread}
-                                </p> */}
                               </div>
                               {/*end threads container */}
                             </div>

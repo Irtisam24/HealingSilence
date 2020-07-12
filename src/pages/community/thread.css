@@ -1,0 +1,237 @@
+.plx-card {
+  transition: all 600ms ease;
+  max-width: 1100px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin: 30px 0;
+  margin-left: 20%;
+  filter: drop-shadow(0 1px 0.5rem #a0aec0);
+  border-radius: 4px;
+}
+@media screen and (min-width: 700px) {
+  .plx-card.gold {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .plx-card {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    border-radius: 2px;
+    margin: 25px 15px;
+  }
+}
+
+.pxc-avatar {
+  transition: all 600ms ease;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 150px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 700px) {
+  .pxc-avatar {
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.pxc-avatar img {
+  transition: all 600ms ease;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 0 1px 1rem rgba(10, 10, 25, 0.5);
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 900px) {
+  .pxc-avatar img {
+    width: 125px;
+    height: 125px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pxc-avatar img {
+    margin-top: 100px;
+  }
+}
+
+.pxc-bg {
+  transition: all 600ms ease;
+  border-radius: 2px;
+  height: 100%;
+  width: calc(100% - 75px);
+  position: absolute;
+  cursor: pointer;
+  left: 75px;
+  background-size: cover;
+  background-position: right;
+}
+
+@media screen and (max-width: 900px) {
+  .pxc-bg {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pxc-bg {
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.pxc-subcard {
+  transition: all 600ms ease;
+  border-radius: 3px;
+  background: #f7fafc;
+  width: 650px;
+  margin: 25px 200px 25px -25px;
+  z-index: 0;
+  padding: 15px 25px 15px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  .pxc-subcard {
+    margin-right: 120px;
+    margin-left: -32px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pxc-subcard {
+    margin: 25px 15px 30px 15px;
+    padding: 60px 25px 20px;
+    width: auto;
+    height: auto;
+    flex: 1 0 auto;
+  }
+}
+
+.pxc-stopper {
+  transition: all 600ms ease;
+  height: 80%;
+  width: calc(60%);
+  display: block;
+  position: absolute;
+  z-index: 0;
+  left: 75px;
+}
+
+.pxc-title {
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: black;
+  width: calc(100% - 50px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .pxc-title {
+    font-size: 16px;
+    white-space: initial;
+    overflow: initial;
+    text-overflow: initial;
+  }
+}
+
+.pxc-sub {
+  font-size: 16px;
+  margin: 8px 2px 8px 2px;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-mask-image: linear-gradient(black 80%, transparent 100%);
+  color: black;
+}
+
+.bottom-row {
+  flex: 0 1 auto;
+  margin-top: 10px;
+  display: flex;
+  justify-items: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .bottom-row {
+    border-top: solid 1px rgba(255, 255, 255, 0.05);
+    padding-top: 5px;
+  }
+}
+.bottom-row .pxc-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .bottom-row .pxc-info {
+    position: absolute;
+    bottom: -28px;
+    left: -10px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .bottom-row .pxc-info .region {
+    color: #112;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+}
+.bottom-row .links {
+  display: flex;
+  align-content: flex-end;
+  flex: 1 0 auto;
+  justify-content: flex-end;
+}
+.bottom-row .links a {
+  color: black;
+  font-size: 28px;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.bronze .bottom-row .links a {
+  display: none;
+}
+.bottom-row .links a:hover {
+  color: #eef;
+}
+@media screen and (max-width: 700px) {
+  .bottom-row .links {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  .bottom-row .links a {
+    color: #a6aad1;
+  }
+}
+
+.bottom-row .region {
+  color: black;
+  margin-left: 8px;
+}
+
+.bronze .discordLink {
+  display: flex !important;
+  position: absolute;
+  left: -5px;
+  bottom: 5px;
+  justify-content: space-around;
+  align-items: center;
+}
